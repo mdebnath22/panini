@@ -6,17 +6,6 @@ morphology roles Root/Limb/Segment/Joint/Terminal) with parameter inheritance
 and specificity arbitration, a geometric realization map Φ to SE(3), a
 feasibility gate, and evolutionary search over MuJoCo robot bodies.
 
-## Layout
-
-```
-ptg/          grammar: roles, rules, arbitration (body_karaka, body_sutra, body_grammar, paribhasa, karaka)
-gmm/          Φ_body (phi_body), SE(3) math (se3), MJCF compiler, CPG locomotion fitness (task_fitness)
-sulba/        geometric feasibility gate (reach, clearance, mass, support polygon, self-collision)
-experiments/  every experiment script (table below)
-figures/      make_figures.py, schematic_robots.py, fig1-fig6 (.pdf/.png)
-paper/        main.tex (TMLR format), tmlr.bib, figures/
-tests/        smoke tests
-docs/         earlier runbook / roadmap / per-module notes
 ```
 
 ## Setup
