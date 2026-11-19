@@ -1,6 +1,6 @@
 # Typed Case-Role Production Grammars for Verifiable Robot Skill and Morphology Synthesis
 
-Code, figures and LaTeX source for the paper. A typed case-role production
+A typed case-role production
 grammar (manipulation roles Agent/Patient/Instrument/Location/Source/Goal;
 morphology roles Root/Limb/Segment/Joint/Terminal) with parameter inheritance
 and specificity arbitration, a geometric realization map Φ to SE(3), a
