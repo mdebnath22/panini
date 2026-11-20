@@ -55,17 +55,17 @@ Helper: `box_embed_np.py` (NumPy box embeddings, required by the region scripts)
 Example:
 
 ```bash
-python3 -m experiments.reviewer3_compactness_curve
-python3 -m experiments.expanded_baseline_table
-python3 -m experiments.expanded_validity_comparison
-python3 -m tests.test_search_loop && python3 -m tests.test_new_experiments
+python3 -m reviewer3_compactness_curve
+python3 -m expanded_baseline_table
+python3 -m expanded_validity_comparison
+python3 -m test_search_loop && python3 -m test_new_experiments
 ```
 
 ### Rendering
 
 ```bash
 export MUJOCO_GL=egl        # or osmesa; needs a node with a GL backend (not a bare login node)
-python3 -m experiments.render_real_robots --seed 0 --settle_steps 300
+python3 -m render_real_robots --seed 0 --settle_steps 300
 ```
 A previous run produced black images, and a no-DISPLAY node crashed in GLFW. The renderer is
 unverified until you get a non-black image; if it stays black, check lighting.
@@ -73,9 +73,9 @@ unverified until you get a non-black image; if it stays black, check lighting.
 ### Figures
 
 ```bash
-python3 figures/make_figures.py
+python3 make_figures.py
 ```
-`figures/schematic_robots.py` has two known cosmetic bugs (an escaped underscore in a title; collinear
+`schematic_robots.py` has two known cosmetic bugs (an escaped underscore in a title; collinear
 segments hide the two-segment structure) and its output is not used in the paper.
 
 ## Key results (as reported in the paper)
